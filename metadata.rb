@@ -1,10 +1,12 @@
 name 'homework'
-maintainer 'The Authors'
-maintainer_email 'you@example.com'
+maintainer 'William Ellett'
+maintainer_email 'kreigor2021@gmail.com'
 license 'all_rights'
-description 'Installs/Configures homework'
-long_description 'Installs/Configures homework'
+description 'Short homework assignment'
+long_description 'Installs/Configures nginx, python, git, and postgres'
 version '0.1.0'
+
+depends 'nginx', '~> 2.7.6'
 
 # If you upload to Supermarket you should set this so your cookbook
 # gets a `View Issues` link

@@ -4,12 +4,17 @@
 #
 # Copyright (c) 2016 The Authors, All Rights Reserved.
 
-postgresql_database 'test_db' do
-  connection(
-    :host     => '127.0.0.1',
-    :port     => 5432,
-    :username => 'postgres',
-    :password => 'password' #TODO generate a password
-  )
+# save node values as variables
+n = node['homework']['database']
+d = node['postgresql']
+connection_info = {
+  host: n['host'],
+  port: d['config']['port'],
+  username: 'postgres',
+  password: d['password']['postgres']
+}
+
+postgresql_database n['dbname'] do
+  connection connection_info
   action :create
 end

@@ -22,3 +22,6 @@ suites:
       inspec_tests:
         - test/recipes
     attributes:
+      homework:
+        database:
+          admin_password: 'postgres_admin_password'

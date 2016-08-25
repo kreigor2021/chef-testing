@@ -7,6 +7,7 @@ long_description 'Installs/Configures nginx, python, git, and postgres'
 version '0.1.0'
 
 depends 'nginx', '~> 2.7.6'
+depends 'postgresql', '~> 4.0.6'
 depends 'poise-python', '~> 1.4.0'
 depends 'git', '~> 4.3'
 

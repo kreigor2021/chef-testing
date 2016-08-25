@@ -7,6 +7,7 @@ long_description 'Installs/Configures nginx, python, git, and postgres'
 version '0.1.0'
 
 depends 'nginx', '~> 2.7.6'
+depends 'poise-python', '~> 1.4.0'
 
 # If you upload to Supermarket you should set this so your cookbook
 # gets a `View Issues` link

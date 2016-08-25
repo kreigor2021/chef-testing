@@ -6,3 +6,4 @@
 
 include_recipe 'nginx::default'
 include_recipe 'homework::web'
+include_recipe 'poise-python::default'

@@ -10,6 +10,7 @@ depends 'nginx', '~> 2.7.6'
 depends 'postgresql', '~> 4.0.6'
 depends 'poise-python', '~> 1.4.0'
 depends 'git', '~> 4.3'
+depends 'database', '~> 5.1.2'
 
 # If you upload to Supermarket you should set this so your cookbook
 # gets a `View Issues` link

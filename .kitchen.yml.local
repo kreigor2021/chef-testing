@@ -1,0 +1,27 @@
+---
+driver:
+  name: vagrant
+  network:
+    - ["private_network", {ip: "192.168.33.33"}]
+
+provisioner:
+  name: chef_zero
+
+verifier:
+  name: inspec
+
+platforms:
+# - name: ubuntu-16.04
+  - name: centos-7.2
+
+suites:
+  - name: default
+    run_list:
+      - recipe[homework::default]
+    verifier:
+      inspec_tests:
+        - test/recipes
+    attributes:
+      homework:
+        database:
+          admin_password: 'postgres_admin_password'
